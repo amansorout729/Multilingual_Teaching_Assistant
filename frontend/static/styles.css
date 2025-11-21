@@ -1,0 +1,13 @@
+body{font-family:Inter,Arial,Helvetica,sans-serif;background:#f6faf6;color:#1f2937}
+.container{max-width:1000px;margin:30px auto;padding:20px;background:white;border-radius:10px;box-shadow:0 6px 18px rgba(0,0,0,0.08)}
+h1{color:#2d6a4f}
+.tabs{display:flex;gap:8px;margin-bottom:16px}
+.tabs button{padding:8px 12px;border-radius:6px;border:1px solid #e5e7eb;background:#fff}
+.tabs button.active{background:#2d6a4f;color:#fff}
+.tab-content{display:none}
+.tab-content.show{display:block}
+.sidebar{float:left;width:200px}
+.main{margin-left:220px}
+#userInput{width:100%;height:120px;padding:8px;border-radius:6px;border:1px solid #e5e7eb}
+.controls{margin-top:10px}
+.result{margin-top:16px;padding:12px;border-radius:6px;background:#f3faf3}

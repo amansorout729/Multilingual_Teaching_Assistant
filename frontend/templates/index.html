@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI English Learning Assistant</title>
+    <link rel="stylesheet" href="/static/styles.css">
+</head>
+<body>
+
+<div class="container">
+    <h1>📚 AI English Learning Assistant</h1>
+
+    <!-- TABS -->
+    <div class="tabs">
+        <button class="active" data-tab="assistantTab">Assistant</button>
+        <button data-tab="grammarTab">Grammar</button>
+        <button data-tab="quizTab">Practice Quiz</button>
+    </div>
+
+    <!-- MAIN CONTENT -->
+    <div class="main-content">
+
+        <!-- ASSISTANT TAB -->
+        <div id="assistantTab" class="tab-content show">
+
+            <textarea id="userInput" placeholder="Type your sentence here..."></textarea>
+
+            <div class="controls">
+                <button id="submitBtn">Process</button>
+            </div>
+
+            <div id="result" class="result"></div>
+
+            <!-- AUDIO -->
+            <div id="audioControls" style="display:none; margin-top:10px;">
+                <label>Audio Speed:</label>
+                <select id="speedSelect">
+                    <option>Normal</option>
+                    <option>Slow</option>
+                    <option>Fast</option>
+                </select>
+                <button id="playAudio">🔊 Play Audio</button>
+            </div>
+
+        </div>
+
+        <!-- GRAMMAR TAB -->
+        <div id="grammarTab" class="tab-content">
+            <h2>Grammar & Structure</h2>
+            <p>Use the assistant tab to analyze sentence grammar, get explanations, corrections, and examples.</p>
+        </div>
+
+        <!-- QUIZ TAB -->
+        <div id="quizTab" class="tab-content">
+            <h2>Practice Quiz</h2>
+
+            <div id="quizQuestion" style="font-weight:bold; margin-bottom:10px;"></div>
+
+            <input id="quizAnswer" placeholder="Your answer..." style="width:100%; padding:8px;">
+
+            <button id="checkQuiz" style="margin-top:10px;">Check Answer</button>
+
+            <div id="quizFeedback" style="margin-top:10px; font-size:18px;"></div>
+        </div>
+
+    </div>
+
+</div>
+
+<script src="/static/script.js"></script>
+</body>
+</html>
+
