@@ -1,0 +1,10 @@
+flask
+python-dotenv
+gTTS
+langchain-core
+langchain-google-genai
+google-api-core
+pydantic
+requests
+openai
+groq
